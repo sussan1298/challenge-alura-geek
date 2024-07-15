@@ -1,0 +1,72 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Funko Spiderman",
+      "precio": "12.00",
+      "imagen": "assets/images/productos/funko_spiderman.png"
+    },
+    {
+      "id": "2",
+      "nombre": "Game Boy Color",
+      "precio": "15.00",
+      "imagen": "assets/images/productos/game_boy_color.jpg"
+
+    },
+    {
+      "id": "3",
+      "nombre": "Super Sayayin Goku",
+      "precio": "23.00",
+      "imagen": "/assets/images/productos/goku.webp"
+
+    },
+    {
+      "id": "4",
+      "nombre": "Tamagotchi",
+      "precio": "9.00",
+      "imagen": "/assets/images/productos/tamagotchi.jpg"
+
+    },
+    {
+      "id": "5",
+      "nombre": "Pikachu",
+      "precio": "12.00",
+      "imagen": "/assets/images/productos/pikachu.jpg"
+
+    },
+    {
+      "id": "6",
+      "nombre": "Jacket Attack on Titan",
+      "precio": "21.00",
+      "imagen": "/assets/images/productos/aot_jacket.png"
+
+    },
+    {
+      "id": "7",
+      "nombre": "Espada y escudo de Link",
+      "precio": "14.00",
+      "imagen": "/assets/images/productos/espada.webp"
+
+    },
+    {
+      "id": "8",
+      "nombre": "Libro de Harry Potter",
+      "precio": "9.00",
+      "imagen": "/assets/images/productos/harry_potter.png"
+
+    },
+    {
+      "id": "9",
+      "nombre": "Atari",
+      "precio": "15.00",
+      "imagen": "/assets/images/productos/atari.jpg"
+
+    },
+    {
+      "id": "10",
+      "nombre": "Banda Naruto",
+      "precio": "10.00",
+      "imagen": "/assets/images/productos/naruto_headband.png"
+    }
+  ]
+}

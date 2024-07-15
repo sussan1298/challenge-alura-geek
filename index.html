@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
+    <title>Alura Geek</title>
+
+</head>
+
+<body>
+
+    <div class="all">
+
+        <header class="menu__header">
+            <img src="assets/images/logo.png" alt="logo">
+            <h3 class="menu__title">AluraGeek</h3>
+        </header>
+
+        <main class="main__container">
+
+            <!-- SECCION : AGREGAR PRODUCTO -->
+            <section class="agregar__producto">
+                <h1 class="agregar__producto__title">
+                    AGREGAR PRODUCTO:
+                </h1>
+
+                <form class="agregar__producto__form" name="form" autocomplete="off">
+
+                    <div class="form__inputs__container">
+                        <input class="input__agregar__producto" type="text" name="nombre" id="nombre"
+                            placeholder="nombre ..." maxlength="20">
+
+                        <input class="input__agregar__producto" type="text" name="precio" id="precio"
+                            placeholder="precio ...">
+
+                        <input class="input__agregar__producto" type="url" name="imagen" id="imagen"
+                            placeholder="imagen ...">
+                    </div>
+
+                    <div class="form__buttons__container">
+                        <button type="submit" class="send__button" disabled>Enviar</button>
+
+                        <button type="reset" class="reset__button" disabled>Limpiar</button>
+                    </div>
+
+                </form>
+
+            </section>
+
+            <!-- SECCION : MIS PRODUCTOS -->
+            <section class="mis__productos">
+                <h1 class="mis__productos__title">
+                    MIS PRODUCTOS:
+                </h1>
+
+                <div id="cards__container">
+
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer__container">
+                <section class="logo__footer">
+                    <img src="assets/images/logo.png" alt="logo">
+                    <h3 class="footer__title">AluraGeek</h3>
+                </section>
+                <p>DESARROLLADO POR SUSSAN CASCANTE</p>
+                <p>ALURA LATAM 2024</p>
+            </div>
+        </footer>
+
+    </div>
+    <script type="module" src="./JS/listarProductos.js"></script>
+</body>
+
+</html>

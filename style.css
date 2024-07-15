@@ -1,0 +1,274 @@
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-link: #000;
+    --color-morado: #5300C8;
+    --color-azul: #03318C;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-de-fondo);
+    font-family: "Press Start 2P", system-ui;
+}
+
+/* --Menu Header-- */
+
+.menu__header {
+    background-color: var(--color-morado);
+    font-size: 1.3em;
+    color: var(--color-de-fondo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: 14px;
+}
+
+.menu__header img {
+    height: 45px;
+    width: auto;
+}
+
+
+/* Section -> Agregar Producto: */
+
+.agregar__producto {
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --Title " Agregar Producto: "-- */
+
+.agregar__producto__title {
+    font-size: 24px;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+/* --Form " Agregar Producto: "-- */
+
+.form__inputs__container input {
+    margin-bottom: 1.7em;
+    padding: 1em;
+    border-radius: 35px;
+    border: 2.5px solid var(--color-azul);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 18px;
+    color: var(--color-azul);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form__buttons__container {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.form__buttons__container button {
+    font-size: 16px;
+    width: 45%;
+    padding: 1em;
+    border-radius: 15px;
+    border: 2.5px solid var(--color-azul);
+    box-sizing: border-box;
+}
+
+.send__button {
+    color: var(--color-de-fondo);
+    background-color: var(--color-azul);
+}
+
+.send__button:hover {
+    background-color: #1452ce;
+    border: 2.5px solid #1452ce;
+}
+
+.reset__button {
+    color: var(--color-azul);
+}
+
+.reset__button:hover {
+    color: #1452ce;
+    border: 2.5px solid #1452ce;
+}
+
+.send__button:disabled {
+    background-color: dimgrey;
+    color: #fff;
+    cursor: not-allowed;
+    border: 2.5px solid dimgrey;
+}
+
+.reset__button:disabled {
+    color: dimgrey;
+    border: 2.5px solid dimgrey;
+}
+
+
+/* --Section -> Mis Productos-- */
+
+.mis__productos {
+    padding: 2.5em 2em;
+}
+
+/* --Title " Mis Productos: "-- */
+
+.mis__productos__title {
+    font-size: 24px;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+/* --Items " Mis Productos: "-- */
+
+/* --Cards-- */
+
+#cards__container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product__card {
+    background-color: #03318C;
+    padding: 1em;
+    width: 140px;
+    max-height: 260px;
+    color: var(--color-de-fondo);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 10px;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.img__product {
+    background-color: var(--color-de-fondo);
+    border-radius: 8px;
+    height: 140px;
+    width: 140px;
+    overflow: hidden;
+}
+
+.img__product img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.product__card h3 {
+    font-size: 1.3em;
+    font-weight: 800;
+    line-height: 1.2em;
+}
+
+.card__container__value {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+
+.card__container__value img {
+    cursor: pointer;
+}
+
+
+/* --Footer-- */
+
+footer{
+    bottom: 0;
+    width: 100%;
+}
+
+.footer__container {
+    background-color: var(--color-morado);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-de-fondo);
+}
+
+.logo__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.logo__footer img {
+    height: 40px;
+}
+
+.footer__container p {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+/* ------------------NO HAY PRODUCTOS------------------ */
+
+.noHayProductos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.noHayProductos__container img {
+    width: 70%;
+}
+
+.noHayProductos__container h2 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 24px;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+/* ------------------MEDIA QUERIE------------------ */
+
+@media (min-width: 875px) {
+    .main__container {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 1em;
+    }
+
+    .main__container section {
+        width: 50%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    /* --Section -> Mis Productos-- */
+
+    .mis__productos {
+        padding: 2.5em 0.8em;
+    }
+
+    #cards__container {
+        height: 50vh;
+        overflow-y: auto;
+    }
+
+    /* Section -> Agregar Producto: */
+
+    .agregar__producto {
+        padding: 2.5em 0.8em;
+    }
+
+    .noHayProductos__container img {
+        width: 50%;
+        margin-top: 3em;
+    }
+
+}
